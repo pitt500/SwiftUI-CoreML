@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
   
-  let images = ["cat1", "dog", "mountains", "tree"]
+  let images = ["cat1", "dog", "mountains", "tree", "pitt"]
   @State private var selectedImage = ""
   
   @ObservedObject private var imageDetectionVM: ImageDetectionViewModel
