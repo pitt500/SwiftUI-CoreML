@@ -13,6 +13,10 @@
 		B5F02B4523AD386700FFF398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F02B4423AD386700FFF398 /* Assets.xcassets */; };
 		B5F02B4823AD386700FFF398 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F02B4723AD386700FFF398 /* Preview Assets.xcassets */; };
 		B5F02B4B23AD386700FFF398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F02B4923AD386700FFF398 /* LaunchScreen.storyboard */; };
+		B5F02B5423AD4C9200FFF398 /* ImageDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F02B5323AD4C9200FFF398 /* ImageDetectionViewModel.swift */; };
+		B5F02B5723AD4D8C00FFF398 /* ImageDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F02B5623AD4D8C00FFF398 /* ImageDetectionManager.swift */; };
+		B5F02B5923AD4E5000FFF398 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B5F02B5823AD4E5000FFF398 /* Resnet50.mlmodel */; };
+		B5F02B5B23AD4ECF00FFF398 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F02B5A23AD4ECF00FFF398 /* UIImage+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B5F02B4723AD386700FFF398 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5F02B4A23AD386700FFF398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F02B4C23AD386700FFF398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F02B5323AD4C9200FFF398 /* ImageDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectionViewModel.swift; sourceTree = "<group>"; };
+		B5F02B5623AD4D8C00FFF398 /* ImageDetectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectionManager.swift; sourceTree = "<group>"; };
+		B5F02B5823AD4E5000FFF398 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		B5F02B5A23AD4ECF00FFF398 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +64,17 @@
 		B5F02B3D23AD386600FFF398 /* SwiftUI-CoreML */ = {
 			isa = PBXGroup;
 			children = (
+				B5F02B5523AD4D7D00FFF398 /* Manager */,
+				B5F02B5223AD4C7E00FFF398 /* View Models */,
 				B5F02B3E23AD386600FFF398 /* AppDelegate.swift */,
 				B5F02B4023AD386600FFF398 /* SceneDelegate.swift */,
 				B5F02B4223AD386600FFF398 /* ContentView.swift */,
 				B5F02B4423AD386700FFF398 /* Assets.xcassets */,
+				B5F02B5823AD4E5000FFF398 /* Resnet50.mlmodel */,
 				B5F02B4923AD386700FFF398 /* LaunchScreen.storyboard */,
 				B5F02B4C23AD386700FFF398 /* Info.plist */,
 				B5F02B4623AD386700FFF398 /* Preview Content */,
+				B5F02B5A23AD4ECF00FFF398 /* UIImage+Extensions.swift */,
 			);
 			path = "SwiftUI-CoreML";
 			sourceTree = "<group>";
@@ -73,6 +85,22 @@
 				B5F02B4723AD386700FFF398 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5F02B5223AD4C7E00FFF398 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5F02B5323AD4C9200FFF398 /* ImageDetectionViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B5F02B5523AD4D7D00FFF398 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B5F02B5623AD4D8C00FFF398 /* ImageDetectionManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +176,10 @@
 			files = (
 				B5F02B3F23AD386600FFF398 /* AppDelegate.swift in Sources */,
 				B5F02B4123AD386600FFF398 /* SceneDelegate.swift in Sources */,
+				B5F02B5723AD4D8C00FFF398 /* ImageDetectionManager.swift in Sources */,
+				B5F02B5B23AD4ECF00FFF398 /* UIImage+Extensions.swift in Sources */,
+				B5F02B5423AD4C9200FFF398 /* ImageDetectionViewModel.swift in Sources */,
+				B5F02B5923AD4E5000FFF398 /* Resnet50.mlmodel in Sources */,
 				B5F02B4323AD386600FFF398 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
